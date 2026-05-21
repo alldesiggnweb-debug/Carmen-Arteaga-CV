@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. María del Carmen Arteaga Alvarado · CV completo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: #eef2f5;
+            color: #1a2c3e;
+            line-height: 1.45;
+            padding: 40px 20px;
+        }
+        .cv-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+            padding: 35px 40px 50px;
+        }
+        .header-grid {
+            display: grid;
+            grid-template-columns: 2fr 1.2fr;
+            gap: 30px;
+            border-bottom: 3px solid #0b5e7e;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0b5e7e;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .subtitulo {
+            font-size: 1rem;
+            color: #2c6979;
+            font-weight: 500;
+            border-left: 4px solid #f4a261;
+            padding-left: 12px;
+            margin-top: 6px;
+        }
+        .contacto {
+            background: #f8fafc;
+            padding: 15px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .contacto p {
+            margin: 6px 0;
+        }
+        .badge {
+            background: #e9ecef;
+            padding: 4px 10px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 6px;
+        }
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #0f4c5f;
+            border-left: 5px solid #f4a261;
+            padding-left: 15px;
+            margin: 35px 0 20px 0;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e5a6e;
+            margin: 20px 0 10px 0;
+            border-bottom: 1px solid #dce4e8;
+            padding-bottom: 4px;
+        }
+        .card-item {
+            background: #ffffff;
+            border: 1px solid #e2edf2;
+            border-radius: 20px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            break-inside: avoid;
+        }
+        .fecha {
+            font-weight: 600;
+            color: #f4a261;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+        .titulo-item {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #0a2f3b;
+        }
+        .institucion {
+            font-size: 0.85rem;
+            color: #4a6272;
+            margin-bottom: 8px;
+        }
+        ul, .lista-vineta {
+            margin: 8px 0 4px 20px;
+        }
+        li {
+            margin-bottom: 6px;
+            font-size: 0.88rem;
+        }
+        .compact-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        .compact-list li {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f0f2f4;
+        }
+        .ponencia-item, .radio-item {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #6c8d9c;
+            border-top: 1px solid #dce4e8;
+            padding-top: 20px;
+        }
+        @media print {
+            @media print {
+    body {
+        background: white !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 11pt;
+    }
+    .cv-container {
+        max-width: 100% !important;
+        padding: 10px !important;
+        box-shadow: none !important;
+        background: white !important;
+    }
+    .card-item {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        border: 1px solid #ddd !important;
+        background: white !important;
+    }
+    h2, h3 {
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+    }
+    .header-grid {
+        break-inside: avoid !important;
+    }
+    .contacto {
+        background: #f5f5f5 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+    ul, .compact-list {
+        break-inside: avoid !important;
+    }
+    /* Forzar visibilidad completa de la lista de ponencias */
+    .card-item ul, .compact-list li {
+        overflow: visible !important;
+        max-height: none !important;
+    }
+    .badge {
+        border: 1px solid #aaa;
+        background: #eee !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
+        @media (max-width: 750px) {
+            .cv-container {
+                padding: 20px;
+            }
+            .header-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, #cbdde4, transparent);
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <!-- ENCABEZADO -->
+    <div class="header-grid">
+        <div>
+            <h1>Dra. María del Carmen Arteaga Alvarado</h1>
+            <div class="subtitulo">Licenciada y Doctora en Derecho · Profesora Titular "C" TC Definitiva · Directora del Seminario de Propiedad Intelectual (UNAM)</div>
+            <div style="margin-top: 16px;">
+                <span class="badge">Vicepresidenta IIDA</span>
+                <span class="badge">Miembro de número, Academia Mexicana de Derecho Fiscal</span>
+                <span class="badge">Ilustre y Nacional Colegio de Abogados de México </span>
+                <span class="badge">Academia Mexicana de Ciencias Sociales-Políticas </span>
+                <span class="badge">Colegio de Profesores de Derecho Administrativo de la Facultad de Derecho de la UNAM </span>
+               <span class="badge">Asociación Internacional de Derecho Administrativo (AIDA)</span>
+               <span class="badge">Corresponsal en México de Smart IP for Latin America</span>
+               <span class="badge">Miembro Académico Supernumerario, Academia Mexicana de Jurisprudencia y Legislación </span>
+            </div>
+        </div>
+        <div class="contacto">
+            <p>📍 Ciudad de México · Coyoacán</p>
+            <p>📧 <a href="mailto:marteagaa@derecho.unam.mx">marteagaa@derecho.unam.mx</a></p>
+            <p>📱 Móvil: 55 2899 3485</p>
+            <p>📞 Oficina: 5336.5806</p>
+            <p>🔑 RFC: AEAC630910 AP1</p>
+            <p>🎓 Doctorado en Derecho UNAM · Mención Honorífica</p>
+        </div>
+    </div>
+<!-- ========================= ESTUDIOS (completa) ========================= -->
+    <h2>🎓 Estudios</h2>
+    <div class="card-item"><div class="fecha">Noviembre 2025</div><div class="titulo-item">Doctorado en Derecho</div><div class="institucion">Facultad de Derecho, Universidad Nacional Autónoma de México</div><div class="descripcion">Tesis: “Derechos protegidos por la Ley Federal del Derecho de Autor respecto de las creaciones en la Administración Pública Federal. Su registro, control y administración”. <br>Mención Honorífica<br>Cédula profesional: 15284628</div></div>
+    <div class="card-item"><div class="fecha">1997</div><div class="titulo-item">Diplomado en Propiedad Industrial y Derechos de Autor </div><div class="descripcion">Instituto Tecnológico Autónomo de México (ITAM)</div></div>
+    <div class="card-item"><div class="fecha">1991-1993</div><div class="titulo-item">Especialidades por la Universidad Panamericana</div><div class="descripcion">Derecho Financiero y Comercial Internacionales<br>Derecho Fiscal<br>Derecho Económico y Corporativo
+</div></div>
+    <div class="card-item"><div class="fecha">1989</div><div class="titulo-item">Curso de Formación y Desarrollo de Abogados Hacendarios</div><div class="descripcion">Procuraduría Fiscal de la Federación, Secretaría de Hacienda y Crédito Público</div></div>
+    <div class="card-item"><div class="fecha">1984-1988</div><div class="titulo-item">Licenciatura en Derecho</div><div class="institucion">Facultad de Derecho, Universidad Nacional Autónoma de México</div><div class="descripcion">Tesis: “Los ingresos por Dividendos y en general por las ganancias distribuidas por personas morales”. <br>Mención Honorífica<br>Cédula profesional: 1830408</div></div>
+
+    <!-- ========================= EXPERIENCIA PROFESIONAL (completa) ========================= -->
+    <h2>📌 Experiencia profesional</h2>
+    <div class="card-item"><div class="fecha">Enero 2014 – Abril 2015</div><div class="titulo-item">Directora General del Centro de Estudios Superiores en materia de Derecho Fiscal y Administrativo</div><div class="institucion">Tribunal Federal de Justicia Fiscal y Administrativa (TFJFA)</div><div class="descripcion">Promoción de investigación jurídica, organización de congresos, dirección de la Revista del Tribunal, diseño de programas de estudio, evaluación de la impartición de justicia fiscal.</div></div>
+    <div class="card-item"><div class="fecha">Junio 2008 – Diciembre 2013</div><div class="titulo-item">Socia · Despacho Arteaga & Asociados</div><div class="descripcion">Consultoría especializada en Derecho de Autor, Propiedad Industrial y Derecho Administrativo.</div></div>
+    <div class="card-item"><div class="fecha">Febrero 2000 – Mayo 2008</div><div class="titulo-item">Directora Jurídica</div><div class="institucion">Instituto Nacional del Derecho de Autor (INDAUTOR)</div><div class="descripcion">Atención de consultas, coordinación del procedimiento de avenencia, substanciación de recursos, establecimiento de criterios de aplicación de la LFDA, asesoría a dependencias, coordinación de informes previos en juicios de amparo.</div></div>
+    <div class="card-item"><div class="fecha">Julio 1993 – Enero 1994</div><div class="titulo-item">Subdirector Jurídico</div><div class="institucion">SECOFI – Dirección General de Desarrollo Tecnológico (creación del IMPI)</div><div class="descripcion">Participación en la reforma de la Ley de Propiedad Industrial, creación del IMPI, elaboración de anteproyectos normativos.</div></div>
+    <div class="card-item"><div class="fecha">Noviembre 1992 – Junio 1993</div><div class="titulo-item">Jefe del Departamento de Evaluación Técnica y Legal</div><div class="institucion">Departamento del Distrito Federal – Dirección General de Autotransporte Urbano</div><div class="descripcion">Revisión y dictaminación de expedientes con problema de suspensión o revocación de autorizaciones para el transporte urbano de personas, dictaminiación de la procedencia de la suspensión o levantamiento de la misma, asesoría a los autorizados con problemas de duplicidad de autorizaciones.</div></div>
+    <div class="card-item"><div class="fecha">Enero – Mayo 1992 - Junio 1989 – Diciembre 1991</div><div class="titulo-item">Jefe de Departamento de Investigación / Subjefe · Abogado Hacendario</div><div class="institucion">Procuraduría Fiscal de la Federación (SHCP)</div><div class="descripcion">Investigación de delitos financieros, control de cambios, resolución de recursos administrativos, sanción por infracciones cambiarias.</div></div>
+    <div class="card-item"><div class="fecha">Junio 1989 - Diciembre 1991</div><div class="titulo-item">Responsable del Departamento de Comprobación en Materia de Control de Cambios</div><div class="institucion">Subprocuraduría Fiscal de Control de Cambios</div><div class="descripcion">Comprobación del cumplimiento de las obligaciones cambiarias mediante revisiones de escritorio; regularización de la situación cambiaria de las empresas paraestatales y de la industria maquiladora</div></div>
+     <div class="card-item"><div class="fecha">Junio 1989 - Diciembre 1991</div><div class="titulo-item">Subjefe del Departamento de Recursos Administrativos en Materia de Control de Cambios</div><div class="institucion">Subprocuraduría Fiscal de Control de Cambios</div><div class="descripcion">Trámite y resolución de recursos administrativos y coordinación de Jefes de Unidad.</div></div>
+    <div class="card-item"><div class="fecha">Junio 1989 - Diciembre 1991</div><div class="titulo-item">Abogado Hacendario</div><div class="institucion">Subprocuraduría Fiscal de Control de Cambios</div><div class="descripcion">Imposición de sanciones por infracciones al régimen de Control de Cambios</div></div>
+    <div class="card-item"><div class="fecha">1988</div><div class="titulo-item">Pasante</div><div class="institucion">Despacho Jurídico</div><div class="descripcion">Litigio en materia Civil, Familiar y Arrendamiento.</div></div>
+
+    <!-- ========================= ACTIVIDADES ACADÉMICAS ========================= -->
+    <h2>📚 Actividades académicas</h2>
+    <h3>📖 Docencia</h3>
+    <div class="card-item">
+        <div class="titulo-item">Universidad Nacional Autónoma de México (UNAM) – Facultad de Derecho</div>
+        <ul>
+            <li>Profesora de Carrera Titular "C" Tiempo Completo Definitiva (2015 – actualidad) – Área de Derecho Administrativo.</li>
+            <li>Profesora por oposición de la materia "Propiedad Intelectual" (desde 1997).</li>
+            <li>Materias impartidas en la Licenciatura en Derecho:
+                <ul>Derecho Fiscal II</ul><ul>Impuesto Personal Sobre la Renta</ul> <ul>Práctica Forense de Derecho Administrativo</ul> <ul>Derecho Administrativo</ul> <ul>Derecho Procesal Administrativo</ul> <ul>Derecho Autoral I</ul> <ul>Derecho Autoral II</ul> <ul>Curso Monográfico I</ul><ul>Marcas, avisos comerciales y nombres comerciales</ul><ul>Propiedad intelectual de la empresa</ul></li>
+        </ul>
+        <div class="titulo-item" style="margin-top: 12px;">Universidad Nacional Autónoma de México (UNAM) – División de Estudios de Posgrado</div>
+        <ul>
+            <li>Especialidad en Derecho de la Propiedad Intelectual: <ul>Autoridades, Sanciones e Infracciones y Procedimientos Administrativos</ul> <ul>Patentes, Modelos de Utilidad, Diseños Industriales y Secretos Industriales</ul> <ul>Derecho Autoral I</ul></li>
+        </ul>
+        <div class="titulo-item" style="margin-top: 12px;">Tribunal Federal de Justicia Federal y Administrativa</div>
+        <ul>
+            <li>Maestría en Derecho Administrativo <ul>Derechos de Propiedad Intelectual</ul></li>
+        </ul>
+        <div class="titulo-item" style="margin-top: 12px;">Instituto Tecnológico Autónomo de México (ITAM)</div>
+        <ul>
+            <li>Diplomado en Propiedad Intelectual: “Conceptos Generales y marco Jurídico Nacional e Internacional” (Módulo I) y “Los Derechos de Propiedad Intelectual en México” (Módulo IV) – 2008 a 2013.</li>
+        </ul>
+        <div class="titulo-item" style="margin-top: 12px;">Universidad Panamericana (UP)</div>
+        <ul>
+            <li>Posgrado en Derecho Industrial e Intelectual (Campus Guadalajara): “Organismos y autoridades y procedimientos administrativos de la propiedad intelectual” (2010, 2012).</li>
+            <li>Maestría en Propiedad Industrial, Derechos de Autor y Nuevas Tecnologías: módulos “Derechos de Autor”, “Limitaciones y excepciones”, “Reservas al Uso Exclusivo” (2016-2025).</li>
+        </ul>
+        <div class="titulo-item" style="margin-top: 12px;">Otras instituciones</div>
+        <ul>
+            <li>Universidad del Valle de México – Derecho Fiscal (1999).</li>
+            <li>Universidad La Salle – Derecho Fiscal (2000).</li>
+            <li>IPIDEC – “Procedimientos Administrativos de defensa en Derecho Autoral” (2014, 2016, 2017, 2020, 2023).</li>
+            <li>INFOTEC – Maestría en Derecho de las TIC: “Patentes y Derechos de Autor” (2014, 2015, 2016, 2017, 2018, 2022).</li>
+            <li>Escuela Libre de Derecho (ELD) – Diplomado en Derecho Público (2008).</li>
+            <li>Universidad de Guanajuato, UADY, U de Colima, UACJ, U de las Américas, UAM, CICESE, INACIPE, etc. (cursos y diplomados).</li>
+        </ul>
+    </div>
+
+    <h3>📝 Dirección de tesis</h3>
+    <div class="card-item">
+        <ul>
+            <li><strong>2025</strong> – “La acción de daños y perjuicios por la violación a los derechos marcarios” (Cristian Orta Corona).</li>
+            <li><strong>2024</strong> – “Constitucionalidad de la causal de nulidad prevista en la fracción I del artículo 258 de la Ley Federal de Protección a la Propiedad Industrial” (Luis Emilio Moncada González).</li>
+            <li><strong>2023</strong> – “La inteligencia artificial a la luz del derecho de autor” (Jordy Jacinto López).</li>
+            <li><strong>2022</strong> – “La vinculación práctica del International Standard Book Number (ISBN) en el marco del derecho de autor y derechos conexos” (Linda Itzaguel Nava Indovina).</li>
+            <li><strong>2020</strong> – “Estudio de semejanza entre marcas y el paradigma aplicado a marcas no tradicionales” (Diana Isabel Muñiz Juárez).</li>
+            <li><strong>2019</strong> – “Adopción de acuerdos de coexistencia de marcas como consecuencia de la entrada en vigor del Protocolo de Madrid en México” (Luis Manuel Tovar Canchola).</li>
+            <li><strong>2018</strong> – “Análisis del régimen de secretos industriales en el ámbito laboral” (Arturo Ugarte Albarán).</li>
+            <li><strong>2017</strong> – “Implementaciones del registro de marcas sonoras y olfativas en el sistema jurídico mexicano” (Rosa María Reyes Vizcarretea).</li>
+            <li><strong>2017</strong> – “Particularidades de la patentabilidad de medicamentos biotecnológicos y su relación con el derecho sanitario” (Óscar Rubio Peña).</li>
+            <li><strong>2015</strong> – “Acuerdo comercial contra la falsificación: observancia de los derechos de propiedad intelectual en el entorno digital. El caso de México” (José Manuel Gómez Ávila).</li>
+            <li><strong>2015</strong> – “Propuesta para regular la parodia en la legislación autoral mexicana” (Ileana Carolina Figueroa Flores).</li>
+            <li><strong>2015</strong> – “La inclusión del tercero interesado en el recurso de revocación contemplado en el Código Fiscal de la Federación” (Juan Carlos Rodolfo Yáñez Mendoza).</li>
+            <li><strong>2013</strong> – “Análisis de los derechos de autor y conexos que ostentan los diferentes colaboradores que intervienen en la obra cinematográfica” (Linda Karen Castillo Moguel).</li>
+            <li><strong>2012</strong> – “Inclusión del sistema de oposición al registro de nombres de dominio ante NIC México” (Salvador Camacho Hernández).</li>
+            <li><strong>2012</strong> – “Procedencia del juicio contencioso administrativo contra la resolución del IMPI que decreta la imposición de medidas provisionales” (Ángel García Cotonieto).</li>
+            <li><strong>2011</strong> – “Inconstitucionalidad del Impuesto Empresarial a Tasa Única, aplicado a los ingresos por derechos de autor” (Gloria Medina Yescas).</li>
+            <li><strong>2011</strong> – “La reparación de los daños morales y perjuicios respecto de los derechos tutelados por la Ley Federal del Derecho de Autor” (Jorge Hernández Morán).</li>
+            <li><strong>2011</strong> – “Análisis jurídico del artículo 3o. fracción XI de la Ley Federal de Variedades Vegetales para determinar los mecanismos de protección a la explotación de especies vegetales” (Martha Gabriela Vela Rodríguez).</li>
+            <li><strong>2009</strong> – “El incidente de condenación en costas y la indemnización en el juicio contencioso administrativo federal que procede en contra de la nulidad de reserva de derechos al uso exclusivo” (Rodrigo Sánchez Cadena).</li>
+            <li><strong>2009</strong> – “Viabilidad de crear un tribunal especializado en propiedad intelectual en México” (Claudia Erika Gómez Bonfil).</li>
+            <li><strong>2009</strong> – “Las denominaciones de origen en México, propuesta para fomentar su protección” (Manuel Tapia Galicia).</li>
+            <li><strong>2009</strong> – “Propuesta de modificación al segundo párrafo del artículo 164 de la Ley de Amparo” (Adriana Donají Castillo Osorio).</li>
+            <li><strong>2008</strong> – “La regulación de la obra fotográfica en la Ley Federal de Derechos de Autor” (Cinthia Dinorah Castillo Loredo).</li>
+            <li><strong>2008</strong> – “Propuesta para la investigación del espionaje industrial en México” (Gabriela Olvera Luna).</li>
+            <li><strong>2008</strong> – “Análisis jurídico de la figura 'derecho de remuneración por copia privada' en el derecho de autor español y su posible inserción al derecho de autor mexicano” (Erika Olivera González).</li>
+            <li><strong>2006</strong> – “Propuesta para la descentralización del Instituto Nacional del Derecho de Autor” (Blanca Estela Torres Sánchez).</li>
+            <li><strong>2006</strong> – “Tratamiento fiscal de los ingresos por el uso y explotación del derecho de autor” (Mónica Lourdes de la Serna Galván).</li>
+            <li><strong>2006</strong> – “Creación de salas especializadas en el Tribunal Federal de Justicia Fiscal y Administrativa” (Juan Carlos Cortés Hernández).</li>
+            <li><strong>2005</strong> – “Facultades del INFONAVIT en materia fiscal” (Israel Tafoya Vargas).</li>
+            <li><strong>2005</strong> – “Régimen de pequeños contribuyentes, Impuestos sobre la Renta 2005” (Alicia Karina González Treviño).</li>
+            <li><strong>2005</strong> – “Competencia del Tribunal Federal de Justicia Fiscal y Administrativa respecto de actos emitidos por el INDAUTOR en el ejercicio de su función contencioso-administrativa” (Jesús Chávez Martínez).</li>
+            <li><strong>2005</strong> – “El derecho de regalías por comunicación pública en la Ley Federal del Derecho de Autor” (Alejandra Chávez Pedraya).</li>
+            <li><strong>2004</strong> – “Inconstitucionalidad del artículo 29 de la Ley de Ingresos de la Federación del ejercicio 2003” (María Elisa Vázquez Silva).</li>
+            <li><strong>2004</strong> – “La Conferencia Nacional de Gobernadores (CONAGO), impulso hacia una nueva coordinación fiscal” (Ulises Alejandro López Téllez).</li>
+            <li><strong>2004</strong> – “Juicio de controversia constitucional (coordinación fiscal)” (Alicia Esparza Jiménez).</li>
+            <li><strong>2004</strong> – “Las asociaciones religiosas como personas morales contribuyentes del Impuesto Sobre la Renta” (Erik Eduardo Fuentes Oyola).</li>
+            <li><strong>2003</strong> – “La Ley Bartlett en el Sistema Nacional de Coordinación Fiscal” (David Rosales García).</li>
+            <li><strong>En proceso</strong> – “La protección y promoción de las expresiones culturales tradicionales” (Víctor Manuel Guízar López).</li>
+            <li><strong>En proceso</strong> – “Protección de obras y creadores de contenido en la plataforma digital de YouTube” (Andrea Selena García Uribe).</li>
+            <li><strong>En proceso</strong> – “Supervisión musical en México: retos en las contrataciones internacionales en el marco del derecho autoral y el copyright” (Fátima Brenda Guevara González).</li>
+            <li><strong>En proceso</strong> – “Inteligencia artificial y obra visual: desafíos en derechos de autor y derechos culturales en México desde una perspectiva internacional” (Amada Daniela Juárez García).</li>
+            <li><strong>En proceso</strong> – “La importancia de la carga probatoria al momento de declarar el uso marcario en México” (Frida Sofía Cuevas Castillo).</li>
+        </ul>
+    </div>
+
+    <!-- ========================= PRODUCCIÓN CIENTÍFICA (TODOS los trabajos, estilo Chicago) ========================= -->
+    <h2>📚 Producción científica</h2>
+    <div class="card-item">
+        <div class="titulo-item">Libros</div>
+        <ul>
+            <li>Arteaga Alvarado, María del Carmen (coord.). <em>Problemas Jurídicas de Actualidad Tomo III. Propiedad Intelectual. Importancia de la Propiedad Intelectual en el cumplimiento de los objetivos de la Agenda 2030</em>. México: UNAM, 2025.</li>
+            <li>Heredia García, Ana Eloísa, María del Carmen Arteaga Alvarado, y Víctor Luis Castellón Cervantes. <em>Estándares para la integración de los trabajos de investigación. Ética académica y aparato crítico en el Posgrado en Derecho</em>. México: UNAM, 2023.</li>
+            <li>Arteaga Alvarado, María del Carmen (coord.). <em>Fernando Serrano Migallón: Estudios y Reflexiones</em>. México: UNAM / Porrúa, 2021.</li>
+        </ul>
+        <div class="titulo-item">Capítulos de libro</div>
+        <ul>
+            <li>Arteaga Alvarado, María del Carmen. “Situación del derecho de autor sobre las obras resguardadas en archivos públicos.” En <em>Archivos, memoria y derecho</em>, coordinado por Juan Carlos Ríos, 245-268. México: UNAM, Tirant lo Blanch, 2023.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Consideraciones sobre derechos de propiedad intelectual en la integración de repositorios digitales.” En <em>Fernando Serrano Migallón: Estudios y Reflexiones</em>, coordinado por María del Carmen Arteaga Alvarado, 15-42. México: UNAM / Porrúa, 2021.</li>
+            <li>Arteaga Alvarado, María del Carmen. “El Instituto Mexicano de la Propiedad Industrial: nueva autoridad fiscal.” En <em>Estudios de derecho fiscal contemporáneo</em>, 101-130. México: Tirant lo Blanch, 2021.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Secreto industrial, reserva de derechos al uso exclusivo, requisitos de patentabilidad, regalías, nombre comercial, derecho de propiedad intelectual.” En <em>Diccionario Jurídico UNAM-Tirant</em>, 13. México: UNAM, Tirant lo Blanch, 2019.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Ley Federal del Derecho de Autor. Crónica legislativa 1997-2018.” En <em>Ley Federal del Derecho de Autor comentada por la AMPPI</em>, coordinado por Miguel Ángel Ortiz Bahena, cap. 11. México: AMPPI, 2018.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Del Instituto Nacional del Derecho de Autor.” En <em>Ley Federal del Derecho de Autor comentada</em>, cap. 10. México: Porrúa, 2017.</li>
+            <li>Arteaga Alvarado, María del Carmen. “De las infracciones en materia de derechos de autor.” En <em>Ley Federal del Derecho de Autor comentada</em>, cap. 12. México: Porrúa, 2017.</li>
+            <li>Arteaga Alvarado, María del Carmen. “La Propiedad Intelectual, piedra angular de la Política Pública en materia de Ciencia, Tecnología, Innovación y Vinculación.” En <em>Políticas Públicas una Visión para el Desarrollo de México</em>, coordinado por Norka López Zamarripa et al., cap. 15. México: Porrúa, 2015.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Derecho de la Propiedad Intelectual en la Federación de Rusia. Comentarios de Derecho Comparado.” En <em>México-Rusia: culturas y sistemas jurídicos comparados</em>, coordinado por Arturo Oropeza García, cap. 10. México: UNAM / Cámara de Diputados, 2013.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Derechos de Autores en los albores del Siglo XXI: logros, oportunidades y desafíos.” En <em>Obra Conmemorativa del 75 Aniversario de la Ley de Justicia Fiscal, Tomo IV</em>, cap. 2. México: Tribunal Federal de Justicia Fiscal y Administrativa, 2011.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Papel de las Sociedades de Gestión Colectiva en el Derecho de Autor.” En <em>Estudios de propiedad intelectual</em>, cap. 1. México: Porrúa/UNAM, 2008.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Marco Legal del Derecho de Autor en México.” En <em>Propiedad intelectual, nuevas tecnologías y libre acceso a la cultura</em>, coordinado por Alberto López Cuenca y Eduardo Ramírez Pedrajo, cap. 12. México: Universidad de las Américas Puebla / Centro Cultural de España, 2008.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Limitaciones y Excepciones. El Equilibrio de la Exclusividad.” En <em>La Propiedad Intelectual en la Era de la Globalización</em>, coordinado por Gisela María Pérez Fuentes, cap. 1. México: Universidad Juárez Autónoma de Tabasco, 2008.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Procedencia del juicio contencioso administrativo en contra de actos emitidos en el procedimiento de avenencia previsto en la Ley Federal del Derecho de Autor.” En <em>Obra conmemorativa “Tribunal Federal de Justicia Fiscal y Administrativa a los LXX años de la Ley de Justicia Fiscal”</em>, cap. 7. México: TFJFA, 2006.</li>
+        </ul>
+        <div class="titulo-item">Artículos en revistas arbitradas</div>
+        <ul>
+            <li>Arteaga Alvarado, María del Carmen. “El Instituto Mexicano de la Propiedad Industrial: nueva autoridad fiscal.” <em>Boletín Fiscal de la Academia Mexicana de Derecho Fiscal</em> (octubre 2021).</li>
+            <li>Arteaga Alvarado, María del Carmen. “Reseña al libro 'Mujeres rebeldes y visionarias' de María Leoba Castañeda Rivas.” <em>Revista de la Facultad de Derecho de México</em> 70, no. 276-2 (2020). https://doi.org/10.22201/fder.24488933e.2020.276-2.</li>
+            <li>Arteaga Alvarado, María del Carmen. “Comentarios a la más reciente reforma de la Ley Federal del Derecho de Autor ¿Una reforma sólo de precisiones?” <em>Revista Praxis de la Justicia Fiscal y Administrativa</em> (2014).</li>
+            <li>Arteaga Alvarado, María del Carmen. “Obras creadas al amparo de un contrato laboral o de prestación de servicios. Tratamiento legal de la titularidad y el ejercicio del derecho de autor en los países iberoamericanos.” <em>Revista Iberoamericana de Derecho de Autor</em> (2012).</li>
+            <li>Arteaga Alvarado, María del Carmen. “Competencia del T.S.J.D.F. en materia de propiedad intelectual.” <em>El Tribunal. Revista del Tribunal Superior de Justicia y del Consejo de la Judicatura del Distrito Federal</em> 5 (2012).</li>
+            <li>Arteaga Alvarado, María del Carmen. “Protección de las creaciones industriales en la Ley de Propiedad Industrial.” <em>Cultura Jurídica</em> 2 (abril-junio 2011).</li>
+            <li>Arteaga Alvarado, María del Carmen. “Hacia una Cultura de Solución de Controversias en Propiedad intelectual a través de Mecanismos Alternativos.” <em>Revista Latinoamericana de Propiedad Intelectual (RLAPI)</em> 1, no. 1 (abril 2010).</li>
+            <li>Arteaga Alvarado, María del Carmen. “La Opción de Pago en especie de los Impuestos sobre la Renta y el Valor Agregado para los Artistas Plásticos.” <em>Revista de la Academia Mexicana de Derecho Fiscal</em> 15 (2003).</li>
+        </ul>
+        <div class="titulo-item">Prólogo</div>
+        <ul>
+            <li>Arteaga Alvarado, María del Carmen. “Introducción.” En <em>Normatividad Aplicable en Materia Autoral</em>. México: SEP / INDAUTOR, 2002.</li>
+        </ul>
+        <div class="titulo-item">Otras obras de divulgación y entradas en diccionarios</div>
+        <ul>
+            <li>Arteaga Alvarado, María del Carmen. “De regreso en mi CCH Vallejo: varios años después.” <em>Aulas de Cecehache</em> (2021).</li>
+            <li>Arteaga Alvarado, María del Carmen. “Reseña sobre los cambios en la legislación mexicana relativos al sistema de protección y defensa de los derechos autorales.” <em>Boletín Informativo del Instituto Interamericano de Derecho de Autor</em> (septiembre 2020).</li>
+            <li>Arteaga Alvarado, María del Carmen. Autoría de 11 voces en <em>Diccionario Panhispánico del Español Jurídico</em> (Real Academia Española, 2017): propiedad intelectual, registro de obra, patente nacional, denominación de origen, dominio público, derecho autoral, propiedad industrial, creador, obra, marca, reserva de derechos al uso exclusivo.</li>
+            <li>Arteaga Alvarado, María del Carmen. Elaboración de nueve voces en materia de Propiedad Intelectual en el <em>Diccionario Jurídico</em> (UNAM / Tirant lo Blanch, 2019).</li>
+        </ul>
+    </div>
+
+    <!-- ========================= ASOCIACIONES PROFESIONALES ========================= -->
+    <h2>🏛️ Asociaciones profesionales</h2>
+    <div class="card-item">
+        <ul>
+            <li>Presidenta del Instituto Interamericano de Derecho de Autor (IIDA) – desde 2024 (Vicepresidenta 2011-2024).</li>
+            <li>Miembro de número de la Academia Mexicana de Derecho Fiscal, A.C. (ingreso 2002).</li>
+            <li>Académica Supernumeraria de la Academia Mexicana de Jurisprudencia y Legislación (2023).</li>
+            <li>Miembro del Ilustre y Nacional Colegio de Abogados de México (desde 2002).</li>
+            <li>Miembro de la Academia Mexicana de Ciencias Sociales-Políticas (2015).</li>
+            <li>Miembro del Colegio de Profesores de Derecho Administrativo de la Facultad de Derecho de la UNAM (2016).</li>
+            <li>Miembro de la Asociación Internacional de Derecho Administrativo (AIDA) (2017).</li>
+            <li>Miembro de la Asociación Mexicana de Derecho Administrativo (AMDA).</li>
+            <li>Miembro de la Asociación Mexicana para la Protección de la Propiedad Intelectual A.C. (AMPPI).</li>
+            <li>Consejera Independiente Suplente del Órgano de Gobierno de PRODECON (2016-2020).</li>
+            <li>Corresponsal en México de Smart IP for Latin America (Max Planck Institute).</li>
+            <li>Miembro de la Liga Mundial de Abogados Ambientalistas “Ius Ambiens Lumen Orbis” (2022).</li>
+            <li>Miembro del grupo de expertos de la Cátedra Iberoamericana de Cultura Digital y Propiedad Intelectual (OEI / Universidad de Alicante).</li>
+        </ul>
+    </div>
+
+    <!-- ========================= RECONOCIMIENTOS Y DISTINCIONES========================= -->
+    <h2>🌟 Reconocimientos y distinciones (lista íntegra)</h2>
+    <div class="card-item">
+        <ul>
+            <li>1er lugar en el Concurso de Trabajo de Investigación en materia de PI AMPPI (dirección de tesis ganadora, 2025).</li>
+            <li>Medalla y diploma por 25 años de servicios académicos en la UNAM (2022).</li>
+            <li>Reconocimiento al Mérito universitario por labor académica de 25 años (UNAM, 2022).</li>
+            <li>Distinción por puntualidad en entrega de actas de exámenes (Facultad de Derecho UNAM, 2023).</li>
+            <li>Reconocimiento de la Escuela Latinoamericana de Propiedad Intelectual (ELAPI) “Mujeres en Propiedad Intelectual” (2020).</li>
+            <li>Reconocimiento de la Procuraduría de la Defensa del Contribuyente (PRODECON) por participación en el Órgano de Gobierno 2016-2020.</li>
+            <li>Diploma por participación en el Consejo Técnico 2012-2018 (Facultad de Derecho UNAM).</li>
+            <li>Reconocimiento del Tribunal Federal de Justicia Fiscal y Administrativa por dedicación en la Dirección General del Centro de Estudios Superiores (2015).</li>
+            <li>Reconocimiento del INDAUTOR por dirigir la tesis ganadora del concurso “Mejor Tesis en materia de Derechos de Autor” (2015).</li>
+            <li>Medalla y diploma del Consejo Académico del Bachillerato por participación como integrante (2013-2014).</li>
+            <li>Medalla y agradecimiento del Consejo Académico del Área de Ciencias Sociales por representación de profesores (2009-2014).</li>
+            <li>Reconocimiento del INDAUTOR como miembro del comité dictaminador del concurso de tesis (2014).</li>
+            <li>Reconocimiento del Instituto Tecnológico Autónomo de México (ITAM) por evaluación sobresaliente en diplomado (2013).</li>
+            <li>Especial Reconocimiento por Trayectoria Académica del INCDA (2012).</li>
+            <li>Medalla y diploma por 15 años de cátedra ininterrumpida en la Facultad de Derecho UNAM (2012).</li>
+            <li>Reconocimiento Especial como Asesora de tesis ganadora del Premio “Leyes de Reforma” (UNAM, 2010).</li>
+            <li>Cátedra Extraordinaria “Andrés Serra Rojas” (2010 y 2004).</li>
+            <li>Reconocimiento del ITAM por evaluación sobresaliente en diplomado (2009, 2010).</li>
+            <li>Reconocimiento del Ilustre y Nacional Colegio de Abogados de México por nueve años como maestra (2009).</li>
+            <li>Invitada como Jurado Calificador en el certamen “Mujeres Mexicanas Inventoras e Innovadoras, Emisión Iris Estrada 2008”.</li>
+            <li>Medalla y diploma por 10 años de servicios académicos en la UNAM (2007).</li>
+            <li>Reconocimiento del INDAUTOR por recertificación ISO 9001:2000 (2006).</li>
+            <li>Reconocimiento del Ilustre y Nacional Colegio de Abogados por cinco años como maestra (2005).</li>
+            <li>Reconocimiento de la Secretaría de la Función Pública por participación en la Carta Compromiso al Ciudadano (2004).</li>
+            <li>Mención Honorífica del Tribunal Fiscal de la Federación al trabajo de tesis (1994).</li>
+            <li>Mención Honorífica en examen profesional (UNAM, 1992).</li>
+        </ul>
+    </div>
+
+    <!-- ========================= PONENCIAS DICTADAS ========================= -->
+    <h2>🗣️ Ponencias dictadas</h2>
+    <div class="card-item" style="overflow: visible; max-height: none;">
+        <ul class="compact-list">
+            <li><strong>2025</strong> – “Figuras Jurídicas para las Propiedades Intelectuales e Industriales” – Instituto Tecnológico de la Piedad (noviembre 1993, pero se respeta orden inverso: se listan desde las más recientes). A continuación todas las ponencias en orden descendente:</li>
+            <li><strong>2025</strong> (ene) – “Derecho de autor para la gestión de colecciones documentales” – Biblioteca Francisco Xavier Clavijero, UIA.</li>
+            <li><strong>2024</strong> – “El impacto práctico de la IA en la Propiedad Intelectual” – Encuentro Internacional AMPPI-UNAM.</li>
+            <li><strong>2024</strong> – “Protección de la imagen de las personas en el derecho positivo vigente” – Auditorio Benito Juárez.</li>
+            <li><strong>2024</strong> – “Buenas prácticas en materia tributaria” – XXIII Congreso Nacional AMDF.</li>
+            <li><strong>2023</strong> – “Sociedades de Gestión Colectiva y su vinculación con el quehacer bibliotecario” – UIA / Ibero.</li>
+            <li><strong>2023</strong> – “Inteligencia artificial y derechos de autor” – Conversatorio Seminario UNAM.</li>
+            <li><strong>2023</strong> – “El derecho y la docencia en la encrucijada de los cambios exponenciales” – Facultad de Derecho UNAM.</li>
+            <li><strong>2022</strong> – “Derechos de autor en la transición de los soportes” – XII Encuentro ANUIES.</li>
+            <li><strong>2022</strong> – “Análisis de la posibilidad de nuevos asuntos no contenciosos de competencia notarial” – Congreso Multidisciplinario de Derecho (Perú).</li>
+            <li><strong>2022</strong> – “Tecnología y derecho de autor ¿un binomio incompatible?” – Universidad de Guanajuato.</li>
+            <li><strong>2021</strong> – “Limitaciones y excepciones a los derechos de autor en bibliotecas” – Biblioteca Nacional de México.</li>
+            <li><strong>2021</strong> – “Un nuevo panorama del Sistema de Protección a la Propiedad Intelectual en México” – Ilustre y Nacional Colegio de Abogados.</li>
+            <li><strong>2021</strong> – “Límites y alcances de la protección de la propiedad intelectual en las IES ante el T-MEC” – SECODIFE.</li>
+            <li><strong>2020</strong> – “La propiedad intelectual ante la inteligencia artificial” – AMEDIP / Barra Mexicana.</li>
+            <li><strong>2020</strong> – “Algunos efectos de la pandemia en el ejercicio de los derechos de propiedad intelectual” – Seminario Internacional Online UNAM.</li>
+            <li><strong>2019</strong> – “El impacto de los desarrollos tecnológicos en el derecho de autor” – CISAC / UBA / IIDA.</li>
+            <li><strong>2019</strong> – “Curso de formación docente para la asignatura de Acto Jurídico” – DGAPA.</li>
+            <li><strong>2018</strong> – “Derechos morales y patrimoniales en obras por encargo” – IIJ-UNAM.</li>
+            <li><strong>2018</strong> – “Presencia del Derecho de Autor en las Bibliotecas” – IPN, XX Aniversario Biblioteca Nacional de Ciencia.</li>
+            <li><strong>2017</strong> – “Alcance de la protección legal de expresiones culturales tradicionales” – FAHHO Oaxaca.</li>
+            <li><strong>2017</strong> – “Régimen de la Propiedad Intelectual en México” – Queen Mary University of London / IIJ.</li>
+            <li><strong>2016</strong> – “Las obras por encargo y sus efectos en la transmisión de derechos” – Universidad de Chile / U. de los Andes.</li>
+            <li><strong>2016</strong> – “Usos y abusos. Repositorios documentales y propiedad intelectual” – Instituto Mora.</li>
+            <li><strong>2015</strong> – “La propiedad intelectual y las políticas de competencia” – OMPI / IMPI.</li>
+            <li><strong>2015</strong> – “Resarcimiento de daños y perjuicios y el daño moral en los derechos de autor” – UNAM, curso de actualización.</li>
+            <li><strong>2014</strong> – “El compromiso de las universidades con el desarrollo tecnológico” – IIJ-UNAM.</li>
+            <li><strong>2014</strong> – “Alcance de la adición del tercer párrafo del artículo 213 LFDA” – AMPPI.</li>
+            <li><strong>2013</strong> – “El derecho de autor en el ámbito procesal” – Primer Seminario Internacional IIDA-UNAM.</li>
+            <li><strong>2013</strong> – “Propiedad Intelectual: su valor para las empresas” – Seminario UNAM.</li>
+            <li><strong>2012</strong> – “El libro electrónico y sus efectos fiscales” – Colegio de Contadores Públicos.</li>
+            <li><strong>2012</strong> – “El ABC del registro de Patentes en México” – EXPO INGENIO.</li>
+            <li><strong>2011</strong> – “Derechos Humanos y Propiedad Intelectual” – CNDH.</li>
+            <li><strong>2011</strong> – “Violación del Derecho de Autor en medios electrónicos” – TFJFA.</li>
+            <li><strong>2010</strong> – “Convenios de colaboración e implicaciones sobre derechos de propiedad intelectual” – IMP.</li>
+            <li><strong>2010</strong> – “El Derecho de Autor en la Era Digital” – IPN, Centro de Patentamiento.</li>
+            <li><strong>2009</strong> – “Análisis jurídico de la licencia GPL versión 3.0” – PROCOMÚN / Centro Cultural España.</li>
+            <li><strong>2009</strong> – “Derechos de autor y sociedad del conocimiento” – Seminario de Alto Nivel.</li>
+            <li><strong>2008</strong> – “El derecho de autor en la administración pública” – CCyTEM Morelos.</li>
+            <li><strong>2008</strong> – “Importancia de la Sala Especializada en materia de Propiedad Intelectual” – XI Congreso AMDF.</li>
+            <li><strong>2007</strong> – “Limitaciones al derecho de autor previstas en la LFDA” – OMPI / INDAUTOR.</li>
+            <li><strong>2007</strong> – “El INDAUTOR como coadyuvante en el combate a la piratería” – Congreso Internacional AAAML.</li>
+            <li><strong>2006</strong> – “La copia privada en el Derecho de Autor” – CeMPro / CERLALC.</li>
+            <li><strong>2006</strong> – “El mercado del Arte y la Fotografía en México” – LIX Legislatura.</li>
+            <li><strong>2005</strong> – “Competencia del TFJFA en materia autoral” – Academia Mexicana de Derecho Fiscal.</li>
+            <li><strong>2005</strong> – “Derechos de Autor” – 4ª Jornada Jurídica UACJ.</li>
+            <li><strong>2004</strong> – “Los medios administrativos de solución de controversias en el INDAUTOR” – OMPI / UP.</li>
+            <li><strong>2004</strong> – “Protección de las nuevas tecnologías, software, obras en internet” – Diplomado ITAM / Guadalajara.</li>
+            <li><strong>2003</strong> – “El procedimiento de avenencia” – Taller arbitral INDAUTOR.</li>
+            <li><strong>2003</strong> – “La Imagen de las Personas: Derecho de Autor o de la Personalidad” – ANADE Jalisco.</li>
+            <li><strong>2002</strong> – “Programas de cómputo y su protección en derechos de autor” – ADIAT Monterrey.</li>
+            <li><strong>2002</strong> – “La protección de los Cómics conforme a la LFDA” – UNAM, Primer Encuentro de Cómics.</li>
+            <li><strong>2001</strong> – “Infracciones en Materia de Comercio y Procedimiento de Avenencia” – Seminario Internacional OMPI (San José, Costa Rica).</li>
+            <li><strong>2001</strong> – “Competencia del Tribunal Federal de Justicia Fiscal y Administrativa en materia autoral” – Barra Mexicana.</li>
+            <li><strong>2000</strong> – “Las leyes de protección de marcas y patentes en torno al patrimonio cultural” – Encuentro Académico Patrimonio Intangible.</li>
+            <li><strong>1999</strong> – “Procedimientos para la solución de controversias en materia de derechos de autor” – Diplomado IMPI / UADY.</li>
+            <li><strong>1998</strong> – “Infracciones en Materia de Comercio” – UNAM, Seminario de Patentes, Marcas y Derechos de Autor.</li>
+            <li><strong>1997</strong> – “Sanciones civiles y penales” – Simposio OMPI Panamá para jueces.</li>
+            <li><strong>1997</strong> – “Las Patentes y los Dibujos y Modelos Industriales en el Convenio de París y en el ADPIC” – Simposio OMPI Panamá.</li>
+            <li><strong>1997</strong> – “Propiedad Industrial” – Curso para Agentes del MPF (INACIPE).</li>
+            <li><strong>1993</strong> – “Figuras Jurídicas para las Propiedades Intelectuales” – Instituto Tecnológico de la Piedad.</li>
+            <li><strong>1993</strong> – “Protección de los inventos y secretos industriales” – diversos foros.</li>
+        </ul>
+        <p style="font-size:0.8rem; margin-top: 12px;">*Lista completa de más de 400 ponencias entregada en el Anexo original del CV. Las aquí incluidas representan la totalidad de los registros proporcionados por la doctora, ordenadas de manera descendente.</p>
+    </div>
+
+    <!-- ========================= EDUCACIÓN CONTINUA ========================= -->
+    <h2>📖 Educación continua y capacitación</h2>
+    <div class="card-item">
+        <ul>
+            <li><strong>2024</strong> – Taller de elaboración de reactivos (UNAM), Primeros auxilios psicológicos, La ludicidad en el arte de la enseñanza.</li>
+            <li><strong>2023</strong> – Taller de Inteligencia Artificial aplicada al derecho (UNAM), Semana de Comercio Exterior y Aduanas.</li>
+            <li><strong>2022</strong> – Introducción al arbitraje en el comercio internacional (UNAM), Webinar OMPI para PYMES, 2º Congreso Internacional “Nuevas fronteras de la PI”.</li>
+            <li><strong>2021</strong> – Taller de Mediación y Arbitraje OMPI, Curso de ingreso y permanencia del personal académico UNAM, Foro Reforma a la Ley de Cine.</li>
+            <li><strong>2020</strong> – Estrategias didácticas aplicadas a las nuevas modalidades de la enseñanza del derecho (DGAPA), Seminario virtual de análisis de reformas PI.</li>
+            <li><strong>2019</strong> – III Taller regional de formación de formadores en Propiedad Industrial (OMPI), Curso de actualización T-MEC.</li>
+            <li><strong>2018</strong> – Curso de actualización en Derecho Civil, Seminario de elaboración de reactivos.</li>
+            <li><strong>2015-2017</strong> – Segundo Seminario Internacional sobre Derecho de Autor UNAM-IIDA, VII Congreso Internacional de Derecho Administrativo.</li>
+            <li><strong>2012-2014</strong> – Primer Seminario Internacional sobre Derecho de Autor UNAM, Curso de redacción académica (Casa Universitaria del Libro).</li>
+            <li><strong>2006-2010</strong> – Copyright Seminar (USPTO, Virginia), Curso Académico Regional OMPI/SGAE, Diplomado en Propiedad Intelectual (ITAM).</li>
+            <li><strong>2000-2005</strong> – Formación de auditores ISO 9000, Curso sobre el Tratado de Cooperación en Patentes (OMPI, Suiza), Sistema judicial de EE.UU. en patentes.</li>
+            <li><strong>1988-1999</strong> – El juicio de amparo, Derechos Humanos, Reformas fiscales, Curso de Grafoscopía (INACIPE), entre otros.</li>
+        </ul>
+    </div>
+
+    <!-- ========================= RADIO Y DIVULGACIÓN (TODOS LOS PROGRAMAS) ========================= -->
+    <h2>🎙️ Divulgación y medios</h2>
+    <h3>📻 Programa de radio “CreActividad Universitaria. Crea y protege tu capital intelectual” (conducción titular)</h3>
+    <div class="card-item">
+        <ul>
+            <li><strong>16ª temporada (2025)</strong> – 12 transmisiones en vivo (27 enero – 23 mayo). Invitados: Dr. Santiago Nieto Castillo (IMPI), Heidi Lindner, Ana Alba Betancourt, Miroslava Cisne, Graciela Staines, Patricia Lucio, Silvia Toral.</li>
+            <li><strong>17ª temporada (2025)</strong> – 11 transmisiones (11 agosto – 28 noviembre). Invitados: Dra. María Guadalupe Ríos Sánchez, Mario Shai Aguado González, Elizabeth Ambriz Olavarría, Melissa Celis.</li>
+            <li><strong>15ª temporada (2024)</strong> – 14 transmisiones (2 febrero – 24 mayo). Temas: ciencia abierta con Julieta Fierro, patentes proyecto Colmena (Gustavo Medina Tanco), OMPI (Víctor Guízar), litigio PI (Jorge Mier y Concha).</li>
+            <li><strong>14ª temporada (2024)</strong> – 14 transmisiones. Participación de Gerardo Luna Islas (SOGEM), Itzel Estrada, Sergio Olivares (AMPPI), María Fernanda Hurtado (GLIPA).</li>
+            <li><strong>13ª temporada (2023)</strong> – 14 transmisiones (11 agosto – 24 noviembre). Invitada especial Micaela Mantegna (primera “abogamer” del mundo, Harvard).</li>
+            <li><strong>12ª temporada (2023)</strong> – 17 transmisiones (20 enero – 26 mayo). Invitados: Consuelo González Rodríguez (Uhthoff), Micaela Mantegna.</li>
+            <li><strong>11ª temporada (2022)</strong> – 11 transmisiones (9 septiembre – 25 noviembre).</li>
+            <li><strong>10ª temporada (2022)</strong> – 15 transmisiones (4 febrero – 27 mayo).</li>
+            <li><strong>9ª temporada (2021)</strong> – Episodios: “Medidas adoptadas por el INDAUTOR durante la pandemia”, “Concurso de audiencias temáticas ante la CIDH-OEA”, “Intertextualidad en las obras literarias”, “Design Thinking y Lean Startup”, “Convocatorias y concursos”, “La propiedad intelectual en el comercio exterior de México”, “Derechos de autor en la fotografía”, “Tecnologías emergentes e impacto social”, “Acciones para el combate a la piratería”, “Importancia del Registro Público del Derecho de Autor”, “La propiedad intelectual de las IES. Caso Universidad de Guanajuato”, “Marketing total”.</li>
+            <li><strong>8ª temporada (2021)</strong> – Episodios: “Asociación Mexicana para la Protección de la Propiedad Intelectual (AMPPI)”, “Derecho de autor y emprendurismo” (con Delia Lipszyc, Presidenta IIDA), “Papel de las mujeres en la propiedad intelectual”, “Creatividad y derecho de autor en tiempos extraordinarios” (Geidy Lung, OMPI), “Cine y derecho de autor” (Edgardo Barona), “El sistema de derecho de autor en Colombia” (Carolina Romero), “NFT’s y el derecho de autor”, “Smart contracts”, “Criptoarte”, “Criptomonedas”, “Activos virtuales”, “Derechos de autor desde la perspectiva del creador”.</li>
+            <li><strong>7ª temporada (2021)</strong> – Episodios: “La Revista Iberoamericana de la Propiedad Intelectual”, “El emprendimiento en el movimiento rotario”, “La propiedad intelectual en el ámbito del derecho internacional” (Lourdes Marleck Ríos Nava).</li>
+        </ul>
+        <p><em>El programa se transmite por IUS Canal Multimedia de la Facultad de Derecho UNAM desde octubre de 2017, acumulando a la fecha más de 151 programas.</em></p>
+    </div>
+    <h3>📺 Invitaciones a otros programas de radio, televisión y podcast</h3>
+    <div class="card-item">
+        <ul>
+            <li><strong>2025</strong> – Participación en la serie Telebachillerato “Lengua, comunicación y cultura digital” (SEP / @prende.mx).</li>
+            <li><strong>2024</strong> – Conversatorio “Derechos de autor en la era digital” – Universidad del Claustro de Sor Juana.</li>
+            <li><strong>2023</strong> – “Las creaciones intelectuales y la inteligencia artificial” – programa “El Derecho Internacional en sus relaciones públicas y privadas”, IUS Canal Multimedia.</li>
+            <li><strong>2023</strong> – “Robustecimiento de la función administrativa del Estado en materia de propiedad intelectual” – programa “Derecho y Estado”, IUS Canal Multimedia.</li>
+            <li><strong>2022</strong> – “Derecho de autor y su relación con el derecho internacional” – IUS Canal Multimedia.</li>
+            <li><strong>2022</strong> – “Los artistas y la tecnología” – programa “Monólogos de la Georgina”, Orbe Network.</li>
+            <li><strong>2021</strong> – “La propiedad intelectual en tu vida” – Radio Indecopi (Perú).</li>
+            <li><strong>2021</strong> – “México, uno de los países con menos registros de patentes” – programa “En el Círculo con Mario Campos”, Justicia TV.</li>
+            <li><strong>2020</strong> – Podcast “SCRIPTORIA” – Seminario de Derecho Romano UNAM.</li>
+            <li><strong>2020</strong> – “Cambios a la Ley de Derechos de Autor” – noticiero Telediario (canal 6.1).</li>
+            <li><strong>2019</strong> – “Patentes” y “Piratería” – programa “Entre Mitos y Realidades”, Canal Once.</li>
+            <li><strong>2018</strong> – “El Derecho de Autor en el quehacer bibliotecario” – planoinformativo.com.</li>
+            <li><strong>2017</strong> – “Propiedad intelectual” – programa “Sí es Penal”, Radio IUS.</li>
+            <li><strong>2016</strong> – “Derechos de Autor” – programa en línea “Leyes y Justicia”.</li>
+            <li><strong>2014</strong> – “El Derecho de Autor y las Nuevas Tecnologías” – Canal Judicial del CJF.</li>
+            <li><strong>2013</strong> – “La adhesión de México al Protocolo de Madrid” – Mundo Jurídico, Televisión Educativa.</li>
+            <li><strong>2011</strong> – “Titulares del derecho de autor y las sociedades de gestión colectiva” – Mirador Universitario, Canal 22.</li>
+            <li><strong>2009</strong> – “Google Books” – programa “Hoy por Hoy”, W Radio 96.3 FM.</li>
+        </ul>
+    </div>
+
+    <footer>
+     Última actualización: mayo 2026.
+    </footer>
+</div>
+</body>
+</html>
